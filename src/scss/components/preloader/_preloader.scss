@@ -23,6 +23,7 @@
       font-weight: 700;
       font-size: 300px;
       line-height: 210px;
+      font-family: 'Montserrat';
 
       @include lg {
         font-size: 220px;
@@ -182,13 +183,14 @@
     height: 100vh;
     font-size: 0;
     pointer-events: none;
+    z-index: 2;
 
     span {
       transform: rotate(-0.2617993877991494rad) scaleX(1) scaleY(1.4) translateZ(0);
       background: linear-gradient(0deg, #E6856B, #E6856B),
-      linear-gradient(0deg, #F9C3B4, #F9C3B4),
-      linear-gradient(180deg, #FF9A9E 0%, #FAD0C4 89.06%),
-      #FFFFFF;
+        linear-gradient(0deg, #F9C3B4, #F9C3B4),
+        linear-gradient(180deg, #FF9A9E 0%, #FAD0C4 89.06%),
+        #FFFFFF;
       display: inline-block;
       height: 100%;
       transition: all 1.5s;
