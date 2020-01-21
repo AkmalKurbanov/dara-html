@@ -1,13 +1,11 @@
 $(document).ready(function () {
-  $('#prlogo').addClass('loaded');
-  $('#prText p').addClass('fade');
   $('#prLoader').fadeIn(700);
   setTimeout(function () {
     $('#strip').addClass('open');
-    $('#prlogo').removeClass('loaded');
-    $('#prText p').removeClass('fade');
+    $('#prlogo').addClass('close');
+    $('#prText').addClass('close');
     $('#prLoader circle').fadeOut();
-  }, 2000);
+  }, 3000);
   setTimeout(function () {
     $('.preloader').remove();
   }, 4000);
@@ -24,3 +22,7 @@ $('#prlogo').each(function (index) {
   });
 
 });
+
+
+
+
