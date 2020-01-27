@@ -8,10 +8,10 @@ html,
 body {
   height: 100%;
   position: relative;
-  font-family: 'MuseoSans';
+  font-family: 'Open Sans',
+    sans-serif;
   counter-reset: section;
-  color: $tc;
-  background-color: #000;
+  color: $sc;
 }
 
 a {
@@ -30,67 +30,42 @@ ul {
   }
 }
 
-// flex footer
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
 
-  .content {
-    flex: 1 0 auto;
-  }
-}
 
-.overlay {
+// select
+.select {
   position: relative;
+  
+  &__checked {
+    position: relative;
+  }
 
-  &:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 2;
-    opacity: 1;
+  &__checked,
+  &__option {
+    text-transform: uppercase;
     transition: $tr;
+    cursor: pointer;
+    margin-bottom: 4px;
+
+    &:hover {
+      color: $mc;
+    }
   }
 
-}
+  &__option {
+    line-height: 20px;
+    font-family: $ga;
 
-// flex footer end
-
-// container
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1180px;
-  position: relative;
-
-  @include lg {
-    max-width: 960px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  @include md {
-    max-width: 720px;
-  }
-
-  @include sm {
-    max-width: 540px;
-  }
-
-  @include xs {
-    max-width: 100%;
-    padding: 0;
+  &__dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
   }
 }
 
-
-// container end
-
-
-
+// select end

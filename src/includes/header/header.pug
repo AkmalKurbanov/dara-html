@@ -1,0 +1,24 @@
+header.header
+  .header__logo
+    a(href="#")
+      |dara
+      span благотворительный фонд
+  .header__control
+    .header__control-item
+      a(href="#") Слабовидящим
+    .header__control-item
+      form(action="")
+        .lang.select
+          input(type="hidden" class="select__item" name="lang" value="РУС")
+          .select__checked РУС 
+          ul.select__dropdown
+            each val in ['РУС', 'ҚАЗ', 'ENG']
+              li.select__option(data-value=val)=val
+
+
+  <div class="hamburger">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+
