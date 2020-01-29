@@ -8,7 +8,6 @@
 
 @import "../../node_modules/normalize.css/normalize.css";
 @import "../../node_modules/swiper/css/swiper.min.css";
-@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
 //---------------------------------------------
 
@@ -37,6 +36,7 @@
 @import "components/base";
 @import "components/header";
 @import "components/preloader/preloader";
-@import "components/hamburger/hamburger";
+@import "components/left-panel/left-panel";
+@import "components/menu/menu";
 @import "components/activities/activities";
 @import "components/footer";

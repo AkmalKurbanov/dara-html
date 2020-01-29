@@ -4,7 +4,13 @@
   justify-content: space-between;
   align-items: center;
   padding-right: 100px;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 22px;
+  padding-left: $padding-content;
+  z-index: 1;
   &__logo {
 
     a {
@@ -37,6 +43,7 @@
     .lang {
       max-width: 100px;
       width: 100%;
+
       ul {
         li {
           a {
